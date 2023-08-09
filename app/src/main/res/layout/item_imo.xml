@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:background="@color/white">
+    android:background="@color/white"
+    app:cardElevation="5dp"
+    android:layout_marginTop="5dp"
+    app:cardCornerRadius="20dp">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
+        android:background="@color/white"
         android:layout_weight="1"
         android:orientation="horizontal">
         <FrameLayout
@@ -16,7 +20,7 @@
             <com.google.android.material.imageview.ShapeableImageView
                 android:id="@+id/iv_profile"
                 android:layout_width="56dp"
-                android:layout_height="48dp"
+                android:layout_height="56dp"
                 android:scaleType="centerCrop"
                 android:adjustViewBounds="true"
                 android:layout_marginLeft="10dp"
@@ -56,6 +60,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="22dp"
                     android:layout_gravity="end"
+                    android:layout_marginRight="70dp"
                     android:text="21:22"
                     android:textColor="#686565"
                     android:textSize="15sp" />
@@ -72,21 +77,21 @@
                     android:text="Hello world!"
                     android:textSize="15sp"/>
             </LinearLayout>
-            <View
-                android:layout_width="match_parent"
-                android:layout_height="0.6dp"
-                android:background="@color/black"/>
         </LinearLayout>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_weight="4"
-        android:gravity="center">
+        android:gravity="center|end"
+        android:paddingRight="10dp">
         <ImageView
             android:id="@+id/iv_call"
             android:layout_width="30dp"
+            android:layout_gravity="center|end"
             android:layout_height="30dp"
+            android:layout_marginRight="10dp"
             android:src="@drawable/pic_call"/>
     </LinearLayout>
-</LinearLayout>
+
+</androidx.cardview.widget.CardView>
