@@ -53,14 +53,15 @@
                     android:layout_weight="1"
                     android:text="Name"
                     android:textStyle="bold"
-                    android:textSize="22sp"/>
+                    android:textSize="18sp"/>
 
                 <TextView
                     android:id="@+id/tv_time"
                     android:layout_width="wrap_content"
                     android:layout_height="22dp"
                     android:layout_gravity="end"
-                    android:layout_marginRight="70dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_marginTop="10dp"
                     android:text="21:22"
                     android:textColor="#686565"
                     android:textSize="15sp" />

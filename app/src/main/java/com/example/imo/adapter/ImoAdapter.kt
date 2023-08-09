@@ -39,8 +39,8 @@ class ImoAdapter(val list:ArrayList<Users>):RecyclerView.Adapter<ImoAdapter.ImoV
 
         val users=list[position]
         holder.tvName.text=users.name
-        holder.tvMessage.text=users.name
-        holder.tvTime.text=users.name
+        holder.tvMessage.text=users.message
+        holder.tvTime.text=users.time
         Glide.with(holder.ivProfile).load(users.profile).into(holder.ivProfile)
 
         if (users.status){
